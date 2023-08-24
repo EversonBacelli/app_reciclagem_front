@@ -1,0 +1,73 @@
+body{
+    width: 1500px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgreen;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    border: black solid 5px;
+    padding: 20px;
+    background-image: url(../img/fundo_reciclagem.jfif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+
+h4{
+    text-align: center;
+    text-shadow: yellow 0.2em 0.1em 0.2em
+}
+
+.dados{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+
+.volume_coleta{
+    background-color: blue;
+    color: white;
+    padding:30px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-right: 80px;
+    height: 230px;
+    border-radius: 20px;
+    opacity: 0.75;
+}
+
+label {
+    display: flex;
+    gap: 10px;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.periodo{
+    background-image: url(../img/date.png);
+    background-size: 85%;
+    background-repeat: no-repeat;
+    width: 400px;
+    color: white;
+    border-radius: 20px;
+    opacity: 0.75;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.date_label{
+    margin-top: 30px;
+}

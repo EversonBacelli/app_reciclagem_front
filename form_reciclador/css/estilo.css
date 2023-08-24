@@ -1,0 +1,78 @@
+body{
+    background-image: url(../img/fundo_natureza.jfif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+img{
+    width: 150px;
+    height: 120px;
+}
+
+.topo{
+    margin-top: 20px;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border: solid black 4px;
+    opacity: 0.8;
+}
+
+.btn_buscar{
+    height: 35px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form button{
+    width: 160px;
+
+}
+
+label{
+    width: 120px;
+    margin: 10px;
+}
+
+#telefone {
+    width: 80px;
+}
+
+.ddd, .input_numero{
+    width: 40px;
+}
+
+.input_bairro, .input_email, .input_instituicao, .input_responsavel, .input_logradouro{
+    width: 385px;
+}
+
+.input_cep{
+    width: 220px;
+}
+
+.input_complemento{
+    width: 235px;
+}
+
+#comp{
+    width: 80px;
+}

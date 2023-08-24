@@ -1,0 +1,101 @@
+body{
+    display: flex;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgreen;
+}
+
+h5{
+    text-shadow: white 0.1em 0.1em 0.2em
+}
+.card{
+    width: 600px !important ;
+    padding: 15px;
+    background-color: lightgreen;
+    border: solid black 5px;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+
+.head_card{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around  ;
+    align-items: center;
+}
+
+.head_card img{
+    width: 40px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    opacity: 0.6 ;
+    border: solid black 1px;
+}
+
+#img-rapido{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#rapido{
+    width: 120px;
+    margin-bottom: -40px;
+    z-index: 0;
+    opacity: 0.8;
+}
+
+.card-status{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    margin-bottom: 20px;
+}
+
+.circle{
+    background-color: white;
+    font-size: 14px;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
+}
+
+hr{
+    width: 160px;
+    border: solid white 10px;
+}
+
+
+.footer-card{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+#fundo{
+    position: absolute;
+    width: 1200px;
+    height: 600px;
+    opacity: 0.3;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+#first-circle{
+    background-color: rgb(28, 151, 191);
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+
+#first-line{
+    border: solid rgb(28, 151, 191) 10px;
+}
+
+.invisivel{
+    display: none;
+}

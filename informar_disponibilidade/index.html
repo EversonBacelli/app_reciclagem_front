@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>Informa Disponibilidade</title>
+  </head>
+  <body>
+    <div class="container">
+        <h4>
+          Informe a quantidade de reciclagem, que uma pessoa identificada irá realizar
+          a coleta no seu endereço.
+        </h4>
+        <div class="dados">
+          <div class="volume_coleta">
+            <label for="">Até 20 Kg  <span><input name="qtd" type="radio" value="Até 20kg"></span>    </label> 
+            <label for="">Até 40 Kg  <span><input name="qtd" type="radio" value="Até 40Kg"></span>  </label> 
+            <label for="">Até 60 Kg  <span><input name="qtd" type="radio" value="Até 60Kg"></span>  </label> 
+            <label for="">Mais que 60Kg <span> <input name="qtd" type="radio" value="mais de 60Kg"></span></label> 
+         </div>
+         <div class="periodo">
+            <label class="date_label" for=""> <span><input id="date_coleta" type="date"></span>DATA</label> 
+            <div >
+               <label for="">Manhã <span><input name="periodo" type="radio" value="Manhã"></span></label> 
+               <label for="">Tarde <span><input name="periodo" type="radio" value="Tarde"></span></label> 
+               <label for="">Noite <span><input name="periodo" type="radio" value="Noite"></span></label> 
+            </div>
+         </div>
+        
+        </div>
+        <button type="button" class="btn btn-success" id="coleta">Solicitar Coleta</button>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
