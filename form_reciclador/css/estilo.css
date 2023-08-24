@@ -54,11 +54,15 @@ label{
 }
 
 #telefone {
-    width: 80px;
+    width: 70px;
 }
 
-.ddd, .input_numero{
+.ddd {
     width: 40px;
+}
+
+.input_numero{
+    width: 90px
 }
 
 .input_bairro, .input_email, .input_instituicao, .input_responsavel, .input_logradouro{
@@ -70,9 +74,16 @@ label{
 }
 
 .input_complemento{
-    width: 235px;
+    width: 200px;
 }
 
 #comp{
-    width: 80px;
+    width: 60px;
 }
+
+input{
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+

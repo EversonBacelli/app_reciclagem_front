@@ -20,31 +20,36 @@
     <form method="POST" action="">
         <div class="conteudo">
           
-          <label for="">Morador</label>
-          <input type="text" class="input_morador">
+          <label for="">Nome</label>
+          <input type="text" name="nome"  class="input_morador">
           <br>
           <label for="">CEP</label>
-          <input type="text" class="input_cep"> 
+          <input type="text" name="cep" class="input_cep"> 
           <button type="button" class="btn btn-primary" id="btn_buscar">Buscar</button>
 
           <br>
           <label for="">Logradouro</label>
-          <input type="text" class="input_logradouro">
+          <input type="text" name="logradouro" class="input_logradouro">
+          <br>
+          <label for="">N°</label>
+          <input type="text" name="numero" class="input_numero"> 
+          <label id="comp" for="">Comp.</label>
+          <input type="text" name="comp" class="input_complemento">
           <br>
           <label for="">Bairro</label>
-          <input type="text" class="input_bairro">
+          <input type="text" name="bairro" class="input_bairro">
           <br>
           <label for="" >DDD</label>
-          <input type="text" class="ddd">
+          <input type="text" name="ddd" class="ddd">
           <label id="telefone" for="">Telefone</label>
-          <input type="text" class="input_telefone">
+          <input type="text" name="telefone" class="input_telefone">
           <br>
           <label for="">E-mail</label>
-          <input type="text" class="input_email">
+          <input type="text" name="email" class="input_email">
           <br>
         </div>
         
-        <button type="button" class="btn btn-success">CADASTRAR</button>
+        <button type="button" class="btn btn-success" id="btn_cadastrar">CADASTRAR</button>
     </form>
     <!-- Optional JavaScript; choose one of the two! -->
 

@@ -51,11 +51,19 @@ label{
     margin: 10px;
 }
 
+input{
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
 #telefone{
     width: 80px;
 }
 
-.ddd{
+.ddd,.input_numero{
+    width: 40px;
+} {
     width: 40px;
 }
 
@@ -65,4 +73,12 @@ label{
 
 .input_cep{
     width: 220px;
+}
+
+.input_complemento{
+    width: 235px;
+}
+
+#comp{
+    width: 80px;
 }

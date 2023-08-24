@@ -28,7 +28,7 @@ function cadastrar(event){
         ddd: form.ddd.value,
         email: form.email.value
     }    
-
+    form.reset()
     console.log(parceiro)
 }
 
