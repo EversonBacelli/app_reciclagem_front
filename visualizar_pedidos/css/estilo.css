@@ -1,0 +1,57 @@
+body{
+    display: flex;
+    height: 1200px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/fundo_reciclagem.jpg);
+}
+
+.container{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
+    border: solid black 5px;
+    background-color: blue;
+    color: white;
+    opacity: 0.85;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+#map{
+    width: 70% ;
+    height: 300px;
+    background-color: orange;
+    margin: 20px;
+    border: solid black 2px;
+}
+
+.img_coleta{
+    width: 60px;
+    border-radius: 50%;
+}
+
+tr{
+    color: white;
+    text-align: center;
+}
+
+td{
+    border: solid white 1px;
+}
+
+.corpo_tabela{
+    background-color: darkgreen;
+    border-radius: 20px;
+}
+
+.btn_coletar{
+    text-align: center;
+    background-color: black !important;
+}
+
+.btn_coletar:hover{
+    text-align: center;
+    background-color: blue !important;
+}

@@ -22,8 +22,6 @@ function cadastrar(event){
         responsavel: form.responsavel.value,
         cep: form.cep.value,
         logradouro: form.logradouro.value,
-        numero: form.numero.value,
-        complemento: form.comp.value, 
         bairro: form.bairro.value,
         ddd: form.ddd.value,
         email: form.email.value

@@ -1,0 +1,65 @@
+[
+    {
+        "id_coleta": 1,
+        "nome_morador": "João Silva",
+        "endereco": "Rua A, 123",
+        "periodo": "Manhã",
+        "qtd_a_retirar": 2
+    },
+    {
+        "id_coleta": 2,
+        "nome_morador": "Maria Santos",
+        "endereco": "Avenida B, 456",
+        "periodo": "Tarde",
+        "qtd_a_retirar": 1
+    },
+    {
+        "id_coleta": 3,
+        "nome_morador": "Pedro Oliveira",
+        "endereco": "Rua C, 789",
+        "periodo": "Manhã",
+        "qtd_a_retirar": 3
+    },
+    {
+        "id_coleta": 4,
+        "nome_morador": "Ana Pereira",
+        "endereco": "Avenida D, 101",
+        "periodo": "Tarde",
+        "qtd_a_retirar": 2
+    },
+    {
+        "id_coleta": 5,
+        "nome_morador": "Luís Santos",
+        "endereco": "Rua E, 234",
+        "periodo": "Manhã",
+        "qtd_a_retirar": 1
+    },
+    {
+        "id_coleta": 6,
+        "nome_morador": "Mariana Costa",
+        "endereco": "Avenida F, 567",
+        "periodo": "Tarde",
+        "qtd_a_retirar": 3
+    },
+    {
+        "id_coleta": 7,
+        "nome_morador": "Rafael Souza",
+        "endereco": "Rua G, 890",
+        "periodo": "Manhã",
+        "qtd_a_retirar": 2
+    },
+    {
+        "id_coleta": 8,
+        "nome_morador": "Camila Alves",
+        "endereco": "Avenida H, 111",
+        "periodo": "Tarde",
+        "qtd_a_retirar": 1
+    },
+    {
+        "id_coleta": 9,
+        "nome_morador": "Gustavo Lima",
+        "endereco": "Rua I, 222",
+        "periodo": "Manhã",
+        "qtd_a_retirar": 3
+    }
+]
