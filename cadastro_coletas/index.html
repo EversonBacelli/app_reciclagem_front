@@ -4,117 +4,42 @@
   <meta charset="UTF-8">
   <title>Cadastrar Coleta</title>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
-    let selectedLatLng = null;
-
-    function initMap() {
-      const map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 40.749933, lng: -73.98633 },
-        zoom: 13
-      });
-
-      const input = document.getElementById("searchInput");
-      const searchBox = new google.maps.places.SearchBox(input);
-
-      map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
-
-      map.addListener("bounds_changed", () => {
-        searchBox.setBounds(map.getBounds());
-      });
-
-      searchBox.addListener("places_changed", () => {
-        const places = searchBox.getPlaces();
-
-        if (places.length === 0) {
-          return;
-        }
-
-        const bounds = new google.maps.LatLngBounds();
-
-        places.forEach((place) => {
-          if (!place.geometry || !place.geometry.location) {
-            return;
-          }
-
-          bounds.extend(place.geometry.location);
-        });
-
-        map.fitBounds(bounds);
-      });
-
-      google.maps.event.addListener(map, 'click', function(event) {
-        selectedLatLng = event.latLng;
-        console.log("Latitude: " + event.latLng.lat() + " " + ", longitude: " + event.latLng.lng());
-      });
-    }
-
-    function cadastrarColeta() {
-      if (selectedLatLng === null) {
-        alert("Por favor, selecione uma localização no mapa.");
-        return;
-      }
-
-      const tipo_lixo = document.getElementById('tipo_lixo').value;
-      const turno = document.getElementById('turno').value;
-      const data = new Date().toISOString().split('T')[0]; // Obtém a data atual
-      const quantidade = document.getElementById('quantidade').value;
-
-      const payload = {
-        latitude: selectedLatLng.lat(),
-        longitude: selectedLatLng.lng(),
-        tipo_lixo: tipo_lixo,
-        turno: turno,
-        data: data,
-        quantidade: quantidade
-      };
-
-      $.ajax({
-        url: 'http://localhost:8080/coletas/add',
-        type: 'POST',
-        contentType: 'application/json',
-        data: JSON.stringify(payload),
-        success: function(response) {
-          alert("Coleta cadastrada com sucesso!");
-        },
-        error: function(error) {
-          alert('Erro ao cadastrar coleta: ' + JSON.stringify(error));
-        }
-      });
-    }
-
-    window.initMap = initMap;
-  </script>
+    <link rel="stylesheet" href="./css/estilo.css">
   <style>
-    #map {
-      height: 400px;
-      width: 100%;
-    }
-    #searchInput {
-      width: 300px;
-    }
+   
   </style>
 </head>
 <body>
+  <div class="btn">
+    <img src="./img/download.jfif" alt="">
+  </div>
   <input id="searchInput" type="text" placeholder="Search">
   <div id="map"></div>
   <form id="coletaForm">
-    <label for="tipo_lixo">Tipo de Lixo:</label>
-    <select id="tipo_lixo">
-      <option value="Papel">Papel</option>
-      <option value="Plastico">Plastico</option>
-      <option value="Metal">Metal</option>
-      <option value="Vidro">Vidro</option>
-    </select>
-    <label for="turno">Turno:</label>
-    <select id="turno">
-      <option value="Manhã">Manha</option>
-      <option value="Tarde">Tarde</option>
-      <option value="Noite">Noite</option>
-    </select>
-    <label for="quantidade">Quantidade de itens:</label>
+    <div class="inf_1">
+      <label for="tipo_lixo">Tipo de Lixo:</label>
+      <select id="tipo_lixo">
+        <option value="Papel">Papel</option>
+        <option value="Plastico">Plastico</option>
+        <option value="Metal">Metal</option>
+        <option value="Vidro">Vidro</option>
+      </select>
+      <label for="turno">Turno:</label>
+      <select id="turno">
+        <option value="Manhã">Manha</option>
+        <option value="Tarde">Tarde</option>
+        <option value="Noite">Noite</option>
+      </select>
+    </div>
+    <div class="inf_1">
+      <label for="quantidade">Quantidade de itens:</label>
       <input type="number" id="quantidade">
+    </div>
+  
+    
   </form>
   <button onclick="cadastrarColeta()">Cadastrar</button>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_ehnan4KHeyZF4g9TUhxRjUNDhbS3rqg&libraries=places&callback=initMap" async defer></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>

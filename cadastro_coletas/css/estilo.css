@@ -1,0 +1,76 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/fundo_reciclagem.jpg);
+}
+
+img{
+    width: 60px;
+    border-radius: 50px;
+    border: solid black 3px;
+}
+
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+
+#map {
+    margin-top: 20px;
+    height: 400px;
+    width: 80%;
+    border: dashed  black  5px;
+  }
+  #searchInput {
+    width: 300px;
+  }
+
+  #searchInput{
+    position: absolute;
+    background-color: black;
+    padding: 5px;
+  }
+
+  form{
+    background-color: blue;
+    color: white;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 30px;
+    height: 100px;
+    border: white solid 2px;
+    border-radius: 15px;
+    border-top-left-radius: 40px;
+  }
+
+  label{
+    margin-right: 10px;
+  }
+
+  #quantidade{
+    width: 60px;
+  }
+
+  input{
+    border: solid black 1px;
+    padding: 5px;
+    
+  }
+
+  select{
+    margin-right: 10px;
+  }
+
+  button{
+    border-radius: 10px;
+    padding: 20px;
+    background-color: darkgreen;
+    color: white;
+    border: solid white 2px;
+    margin-top: -28px;
+  }

@@ -1,0 +1,72 @@
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    background-image: url(../img/fundo_reciclagem.jpg);
+}
+
+.container{
+    display: flex;
+    width: 400px;
+    gap: 20px;
+    justify-content: space-around;
+    background-color: white;
+    padding: 40px;
+    border: dashed black 4px;
+    opacity: 0.9;
+    border-radius: 20px;
+}
+
+.cadastrar{
+    color: white;
+    width: 150%;
+    height: 200px;
+    background-image: url(../img/adicionar.png);
+    background-repeat: no-repeat;
+    display: flex; 
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;  
+    border: solid black 5px;
+    border-radius: 20px;
+}
+
+.cadastrar img, .visualizar img{
+    width: 80px;
+    border-radius: 50%;
+    border: solid black 3px;
+}
+
+.visualizar p, .cadastrar p{
+    background-color: blue;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.visualizar{
+    color: white;
+    width: 150%;
+    height: 200px;
+    background-image: url(../img/visualizar.jpg);
+    background-repeat: no-repeat;
+    display: flex; 
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;  
+    border: solid black 5px;
+    border-radius: 20px;
+}
+
+p{
+    height: 150px;
+    opacity: 0.9;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: red solid 1px;
+    font-size: 15px;
+}

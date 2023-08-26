@@ -81,3 +81,11 @@ function initMap() {
 }
 
 window.initMap = initMap;
+
+
+let btn_voltar = document.querySelector('.btn')
+console.log(btn_voltar)
+
+btn_voltar.addEventListener('click', () =>{
+    window.location.href = '../../tela_principal/index.html'
+})
