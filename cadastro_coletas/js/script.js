@@ -1,11 +1,35 @@
 let selectedLatLng = null;
+let userLocation = null;
 
 function initMap() {
-  const map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: 40.749933, lng: -73.98633 },
-    zoom: 13
-  });
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition((position) => {
+      userLocation = {
+        lat: position.coords.latitude,
+        lng: position.coords.longitude
+      };
+      
+      const map = new google.maps.Map(document.getElementById("map"), {
+        center: userLocation,
+        zoom: 13
+      });
 
+      setupSearchBox(map);
+      setupClickListener(map);
+
+    });
+  } else {
+    const map = new google.maps.Map(document.getElementById("map"), {
+      center: { lat: 40.749933, lng: -73.98633 },
+      zoom: 13
+    });
+
+    setupSearchBox(map);
+    setupClickListener(map);
+  }
+}
+
+function setupSearchBox(map) {
   const input = document.getElementById("searchInput");
   const searchBox = new google.maps.places.SearchBox(input);
 
@@ -34,7 +58,9 @@ function initMap() {
 
     map.fitBounds(bounds);
   });
+}
 
+function setupClickListener(map) {
   google.maps.event.addListener(map, 'click', function(event) {
     selectedLatLng = event.latLng;
     console.log("Latitude: " + event.latLng.lat() + " " + ", longitude: " + event.latLng.lng());
@@ -49,7 +75,7 @@ function cadastrarColeta() {
 
   const tipo_lixo = document.getElementById('tipo_lixo').value;
   const turno = document.getElementById('turno').value;
-  const data = new Date().toISOString().split('T')[0]; // Obtém a data atual
+  const data = new Date().toISOString().split('T')[0];
   const quantidade = document.getElementById('quantidade').value;
 
   const payload = {
@@ -77,8 +103,8 @@ function cadastrarColeta() {
 
 window.initMap = initMap;
 
-let btn = document.querySelector('.btn')
+let btn = document.querySelector('.btn');
 
-btn.addEventListener('click', () =>{
-    window.location.href = '../../tela_principal/index.html'
-})
+btn.addEventListener('click', () => {
+  window.location.href = '../../tela_principal/index.html';
+});
