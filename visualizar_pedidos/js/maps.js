@@ -11,5 +11,3 @@ async function initMap() {
 }
 
 initMap();
-let key = 'AIzaSyB6OQ3E6cipbLpesyxRa7AoZTIu3gIL2wA'
-let id_projeto = 'appreciclagem-397022'
